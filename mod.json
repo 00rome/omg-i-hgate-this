@@ -1,0 +1,25 @@
+{
+  "geode": "5.11.2",
+  "gd": { "win": "2.2081" },
+  "id": "flux.input-buffer",
+  "name": "Flux",
+  "version": "v1.0.0",
+  "developer": "Rome",
+  "description": "Input buffer. Every frame counts. Press Y in-game to open the Flux menu.",
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Enabled",
+      "default": true
+    },
+    "frames": {
+      "type": "int",
+      "name": "Buffer (frames)",
+      "description": "1 frame = 1/60 s of gameplay time. 0 disables buffering.",
+      "default": 5,
+      "min": 0,
+      "max": 20,
+      "control": { "input": true, "slider": true }
+    }
+  }
+}
